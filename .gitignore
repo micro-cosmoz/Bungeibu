@@ -1,7 +1,13 @@
 *.class
 *.log
 .idea
+
+#tex
+*.aux
+*.dvi
+*.gz
 .texpadtmp
+
 
 # sbt specific
 .cache
