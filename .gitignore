@@ -1,6 +1,7 @@
-ass
+*.class
 *.log
 .idea
+.texpadtmp
 
 # sbt specific
 .cache
