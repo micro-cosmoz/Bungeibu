@@ -15,11 +15,11 @@
 
 - ローカルに落としたリポジトリにファイルを追加する
 
-- `git add [filename]`
+- `$ git add [filename]`
 
-- `git commit -m [commit message]`
+- `$ git commit -m [commit message]`
 
-- git push
+- `$ git push`
 
 - pull request を作成
 
@@ -31,9 +31,7 @@ makepdf.sh は tex ファイルをコンパイルして pdf を生成するス�
 使い方は
 
 ```
-sh makepdf.sh [filename]
+$ sh makepdf.sh [filename]
 ```
 
-でok!
-
-（[filename]は拡張子なしでやるとスムーズです）
+でok! [filename]は拡張子なしでやるとスムーズです。
