@@ -1,33 +1,15 @@
-*.class
-*.log
-.idea
-
-#tex
+#LaTeX specific
 *.aux
 *.dvi
 *.gz
+*.log
 .texpadtmp
-
-
-# sbt specific
-.cache
-.history
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
-
 *.swp
-
-*.aux
 *.out
 
-#OSX
+# OSX specific
+
 .DS_Store
 ._*
-
 ~*
 
