@@ -25,7 +25,7 @@
 
 - merge されるのを待つ
 
-# makepdf.shについて
+# ~~makepdf.shについて~~
 
 makepdf.sh は tex ファイルをコンパイルして pdf を生成するスクリプトです。
 使い方は
@@ -35,3 +35,14 @@ $ sh makepdf.sh [filename]
 ```
 
 でok! [filename]は拡張子なしでやるとスムーズです。
+
+***コマンド入力でフォントを埋め込むためこのスクリプトを使ってのコンパイルは一旦中止とします。**
+
+# フォントの埋め込み方法
+
+OS Xの場合は
+```
+$ platex foo.tex
+$ dvipdfmx -f hiragino.map foo.dvi
+```
+でフォントを埋め込むことが可能です。これにより日本語の文字化けを防止できます。
