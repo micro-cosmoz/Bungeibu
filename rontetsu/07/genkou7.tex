@@ -1,19 +1,31 @@
-\documentclass[12pt]{jsarticle}
-\usepackage[top=20truemm,bottom=20truemm,left=25truemm,right=25truemm]{geometry}
+\documentclass[11pt,a4paper]{jsbook}
+\usepackage{amsmath,amssymb,amsthm,bm,delarray,url}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{float}
-\usepackage{amsmath,amssymb}
+
+
+%送り仮名(ルビ)\ruby{漢字}{かんじ}
+    \newcommand{\ruby}[2]{%
+    \leavevmode
+    \setbox0=\hbox{#1}%
+    \setbox1=\hbox{\tiny #2}%
+    \ifdim\wd0>\wd1 \dimen0=\wd0 \else \dimen0=\wd1 \fi
+    \hbox{%
+    \kanjiskip=0pt plus 2fil
+    \xkanjiskip=0pt plus 2fil
+    \vbox{%
+    \hbox to \dimen0{%
+    \tiny \hfil#2\hfil}%
+    \nointerlineskip
+    \hbox to \dimen0{\mathstrut\hfil#1\hfil}}}} 
+
+
+
 \begin{document}
-\newcommand{\bvec}[1]{\mbox{\boldmath $#1$}}
-\begin{flushright}
-2016/02/27(Sun) 山川 草木
-\end{flushright}　\\ 
-\begin{LARGE}
-東工大文芸部『論理哲学論考』読書会ファイナル
-\end{LARGE}
-\begin{flushright}
-－論考の向こう側へ－
-\end{flushright}
+
+
+\chapter{第七回-論考の向こう側へ-}
+
+筆者：山川草木
 
 \section{導入}
 \subsection*{範囲}
@@ -167,7 +179,6 @@
 そうだ。私の仕事は論理の基礎から世界の本質へと広がってきている。
 \end{quote}
 
-\newpage
 \begin{thebibliography}{9}
 \bibitem{光文社}
   ヴィトゲンシュタイン(丘沢静也 訳)「論理哲学論考」 光文社古典新訳文庫(光文社, 2014)
